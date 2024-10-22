@@ -17,7 +17,7 @@ module.exports = {
   rules: {
     indent: ["error", 2],
     "linebreak-style": ["error", "unix"],
-    quotes: ["error", "single"],
+    quotes: ["error", "double"],
     semi: ["error", "never"],
     eqeqeq: "error",
     "no-trailing-spaces": "error",
@@ -31,4 +31,4 @@ module.exports = {
       version: "detect", // Automatically detects the React version
     },
   },
-};
+}

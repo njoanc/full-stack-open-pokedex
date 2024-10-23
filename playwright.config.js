@@ -74,7 +74,7 @@ module.exports = defineConfig({
     {
       command: "npm run start-prod",
       port: 5000,
-      timeout: 180 * 1000,
+      timeout: 300000,
       reuseExistingServer: true,
     },
   ],

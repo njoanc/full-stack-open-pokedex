@@ -25,7 +25,7 @@ module.exports = defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: "http://127.0.0.1:3000",
+    baseURL: "http://127.0.0.1:5000",
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on-first-retry",
@@ -76,12 +76,6 @@ module.exports = defineConfig({
       port: 5000,
       timeout: 180 * 1000,
       reuseExistingServer: true,
-    },
-    {
-      command: "npm run backend",
-      url: "http://127.0.0.1:3333",
-      timeout: 120 * 1000,
-      reuseExistingServer: !process.env.CI,
     },
   ],
 });

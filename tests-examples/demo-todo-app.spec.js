@@ -1,6 +1,6 @@
 // @ts-check
 // @ts-ignore
-import { test, describe, beforeEach, expect } from "@playwright/test";
+import { test, describe, expect } from "@playwright/test";
 
 describe("Pokedex", () => {
   test("front page can be opened", async ({ page }) => {
